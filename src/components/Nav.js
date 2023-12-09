@@ -148,9 +148,9 @@ const Nav = () => {
 
         .cart-total--item {
           width: 4.2rem;
-          height: 4.2rem;
-          font-size: 2rem;
-        
+          height: 3.1rem;
+          font-size: 1.6rem;
+          color:white
         }
       }
 
@@ -170,7 +170,7 @@ const Nav = () => {
             <NavLink
               to="/"
               className="navbar-link "
-                  onClick={() => setMenuIcon(false)}>
+              onClick={() => setMenuIcon(false)}>
               Home
             </NavLink>
           </li>
@@ -201,7 +201,7 @@ const Nav = () => {
           <li>
             <NavLink to="/cart" className="navbar-link cart-trolley--link">
               <FiShoppingCart className="cart-trolley" />
-              <span className="cart-total--item"> 10 </span>
+              <span className="cart-total--item"> 12 </span>
             </NavLink>
           </li>
         </ul>
