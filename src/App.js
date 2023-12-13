@@ -10,6 +10,7 @@ import ErrorPage from "./ErrorPage";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
 
@@ -17,8 +18,8 @@ const App = () => {
 
     colors: {
 
-          bg: " #AFEEEE",
-          footer_bg: "0a1435",
+          bg: " #6082B6",
+          footer_bg: "#0E3386",
           btn: "rgb(98 84 243)",
           border: "rgba(98, 84, 243, 0.5)",
           hr: "#ffffff",
@@ -51,6 +52,7 @@ const App = () => {
       
 
     </Routes>
+    <Footer/>
   </Router>
   </ThemeProvider>
   );
