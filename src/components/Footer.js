@@ -109,7 +109,7 @@ const Wrapper = styled.section`
       margin-bottom: 2.4rem;
     }
     p {
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.hr};
     }
     .footer-social--icons {
       display: flex;

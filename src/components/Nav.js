@@ -148,9 +148,8 @@ const Nav = () => {
 
         .cart-total--item {
           width: 4.2rem;
-          height: 3.1rem;
-          font-size: 1.6rem;
-          color:white
+          height: 4.2rem;
+          font-size: 2rem;
         }
       }
 
@@ -201,7 +200,7 @@ const Nav = () => {
           <li>
             <NavLink to="/cart" className="navbar-link cart-trolley--link">
               <FiShoppingCart className="cart-trolley" />
-              <span className="cart-total--item"> 12 </span>
+              <span className="cart-total--item"> 10 </span>
             </NavLink>
           </li>
         </ul>
