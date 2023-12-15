@@ -17,7 +17,7 @@ const Header = () => {
 }
   const MainHeader = styled.header`
     height: 10rem;
-    
+    background-color:#B2FFFF;
     display:flex;
     justify-content: space-between;
     align-items: center;

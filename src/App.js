@@ -18,7 +18,7 @@ const App = () => {
 
     colors: {
 
-          bg: " #6082B6",
+          bg: " #1ca9c9",
           footer_bg: "#0E3386",
           btn: "rgb(98 84 243)",
           border: "rgba(98, 84, 243, 0.5)",
