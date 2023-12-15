@@ -16,10 +16,17 @@ const App = () => {
 
   const theme = {
 
-    colors: {
-
-          bg: " #1ca9c9",
-          footer_bg: "#0E3386",
+   
+      colors: {
+        heading: "rgb(24 24 29)",
+        text: "rgba(29 ,29, 29, .8)",
+        white: "#fff",
+        black: " #212529",
+        helper: "#8490ff",
+  
+        
+        bg: "#E0FFFF",
+        footer_bg: "#002244",
           btn: "rgb(98 84 243)",
           border: "rgba(98, 84, 243, 0.5)",
           hr: "#ffffff",
@@ -47,7 +54,7 @@ const App = () => {
       <Route path="/about" element={<About/>}/>
       <Route path="/products" element={<Products />}/>
       <Route path="/contact" element={<Contact />}/>
-      <Route path="/singleproduct" element={<SingleProduct />}/>
+      <Route path="/singleproduct/:id" element={<SingleProduct />}/>
       <Route path="cart" element={<Cart />}/>
       
 
