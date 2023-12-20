@@ -7,7 +7,8 @@ const MyImage = ({ imgs=[{url:""}]}) => {
   
   
   
-return <Wrapper>
+return 
+<Wrapper>
    
    <div className='grid grid-four-column'>
     {imgs.map((curElm, index) => {

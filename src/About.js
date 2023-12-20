@@ -1,10 +1,9 @@
-import React, { useContext } from 'react'
+
 import HeroSection from './components/HeroSection'
-import { AppContext } from './context/productcontext';
+import { useProductContext } from "./context/productcontex";
 
 const About = () => {
-
-  const myName =useContext(AppContext);
+  const { myName } = useProductContext()
   const data ={
     name:" Ecomerce Website",
     images: "images/hero2.jpg"
