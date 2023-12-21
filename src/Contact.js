@@ -33,7 +33,8 @@ const Contact = () => {
     }
   `;
 
-  return <Wrapper>
+  return (
+  <Wrapper>
      <h2  className="common-heading"> Contact page</h2>
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.7446905617335!2d85.32040386527196!3d27.67488450139201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19cf67d0be7b%3A0x8a4a556b643c1f14!2sDhaugal%20Bazaar!5e0!3m2!1sen!2snp!4v1702487395939!5m2!1sen!2snp"
       width="100%" 
@@ -79,7 +80,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
-  </Wrapper>;
+  </Wrapper>
+  );
 };
 
 export default Contact;

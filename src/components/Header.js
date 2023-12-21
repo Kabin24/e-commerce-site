@@ -7,7 +7,7 @@ const Header = () => {
   return (
    <MainHeader>
         <NavLink to="/">
-            <img src="./images/logo1.png" alt ="my logo images " />
+            <img src="./images/logo1.png" alt ="my logo img " />
 
         </NavLink>
         <Nav/>

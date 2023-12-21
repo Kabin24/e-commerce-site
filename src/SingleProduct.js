@@ -21,6 +21,7 @@ const SingleProduct = () => {
   const { id } = useParams();
 
   const {
+    image,
     id: alias,
     name,
     company,
@@ -49,7 +50,7 @@ const SingleProduct = () => {
         <div className="grid grid-two-column">
           {/* product Images  */}
           <div className="product_images">
-            <MyImage imgs={singleProduct.image} />
+            <MyImage imgs={image} />
           </div>
 
           {/* product dAta  */}

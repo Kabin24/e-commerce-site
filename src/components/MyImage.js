@@ -7,7 +7,7 @@ const MyImage = ({ imgs=[{url:""}]}) => {
   
   
   
-return 
+return (
 <Wrapper>
    
    <div className='grid grid-four-column'>
@@ -30,7 +30,7 @@ return
         <img src={mainImage.url} alt={mainImage.filename} />
       </div>
      </Wrapper>
-  ;
+ ) ;
 };
 
 const Wrapper = styled.section`

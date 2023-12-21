@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Button } from "../styles/Button";
 
 const HeroSection = ({ myData }) => {
- const {name,images} = myData;
+ const {name} = myData;
 
   return (
     <Wrapper>
@@ -16,15 +16,15 @@ const HeroSection = ({ myData }) => {
             Your one-stop destination for affordable and quality online shopping! At Sasto Bazar, we believe in making e-commerce accessible to everyone by offering a diverse range of products at unbeatable prices.
             </p>
             <NavLink>
-            <StyledButton>Shop now</StyledButton>
+            <Button>shop now</Button>
             </NavLink>
           </div>
         
           <div className="hero-section-image">
             <figure>
             <img
-                  src={images}
-                  alt={`hero-section-photo`}
+                   src="images/hero1.jpg"
+                  alt=" Hero Section Image"
                   className="img-style"
                 />
             </figure>
@@ -102,8 +102,5 @@ const Wrapper = styled.section`
     }
   }
 `;
-const StyledButton = styled(Button)`
-  padding: 10px 20px;
-  text-transform: none;
-`;
+
 export default HeroSection;

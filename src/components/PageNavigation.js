@@ -4,10 +4,12 @@ import styled from 'styled-components'
 
 
 const PageNavigation = ({title}) => {
-  return <Wrapper>
+  return( 
+  <Wrapper>
     <NavLink to="/">Home</NavLink>/{title}
 
   </Wrapper>
+  )
 }
 const Wrapper = styled.section`
   height: 10rem;

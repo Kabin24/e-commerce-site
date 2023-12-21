@@ -4,7 +4,7 @@ import Product from './Product'
 
 const GridView = ({products}) => {
 
-  return 
+  return (
   <Wrapper className='section'>
  <div className='container grid grid-three-column'>
  {products.map((curElem) => {
@@ -14,7 +14,7 @@ const GridView = ({products}) => {
 
   </Wrapper>
     
-  
+  )
 }
 const Wrapper = styled.section`
   padding: 9rem 0;
