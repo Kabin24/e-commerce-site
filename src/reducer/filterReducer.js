@@ -78,6 +78,25 @@ const filterReducer = (state, action) => {
               return curElem.name.toLowerCase().includes(text);
             });
           }
+          if (category !== "all") {
+            tempFilterProduct = tempFilterProduct.filter(
+              (curElem) => curElem.category === category
+            );
+          }
+    
+          if (company !== "all") {
+            tempFilterProduct = tempFilterProduct.filter(
+              (curElem) => curElem.company.toLowerCase() === company.toLowerCase()
+            );
+          }
+          
+          if(color){
+            tempFilterProduct =tempFilterProduct.filter(
+              (curElem) => curElem.colors.includes(color)
+            )
+
+          }
+         
     
           
           return {
