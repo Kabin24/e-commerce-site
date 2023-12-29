@@ -1,12 +1,14 @@
 import styled from "styled-components"
 import { useFilterContext } from "../context/filter_context";
-
 import { FaCheck } from "react-icons/fa";
+import  FormatPrice from "../Helpers/FormatPrice"
+import {Button} from  "../styles/Button"
 const FilterSection = () => {
   const {
-    filters: {text,category,color},
+    filters: {text,category,color,price,maxPrice,minPrice},
     updateFilterValue,
     all_products,
+    clearFilters,
     
 } = useFilterContext();
 
@@ -82,24 +84,23 @@ return (
     </div>
 
     <div className="filter-colors colors">
-      <h3>Colors</h3>
-    <div className="filter-color-style">
+        <h3>Colors</h3>
+
+        <div className="filter-color-style">
           {colorsData.map((curColor, index) => {
-              if (curColor === "all"){
-                return (
-                  <button
-                    key={index}
-                    type="button"
-                    value={curColor}
-                    name="color"
-                    style={{ backgroundColor: curColor }}
-                    className={color === curColor ? "btnStyle active" : "btnStyle"}
-                    onClick={updateFilterValue}>
-                    {color === curColor ? <FaCheck className="checkStyle" /> : null}
-                  </button>
-                );
-              }
-              
+            if (curColor === "all") {
+              return (
+                <button
+                  key={index}
+                  type="button"
+                  value={curColor}
+                  name="color"
+                  className="color-all--style"
+                  onClick={updateFilterValue}>
+                  all
+                </button>
+              );
+            }
             return (
               <button
                 key={index}
@@ -114,9 +115,26 @@ return (
             );
           })}
         </div>
-
-    </div>
-
+      </div>
+      <div className="filter_price">
+        <h3>Price</h3>
+        <p>
+          <FormatPrice price={price} />
+        </p>
+        <input
+          type="range"
+          name="price"
+          min={minPrice}
+          max={maxPrice}
+          value={price}
+          onChange={updateFilterValue}
+        />
+      </div>
+        <div className="filter-clear">
+          <Button className="btn"  onClick={clearFilters}>
+            Clear Filters
+          </Button>
+        </div>
   </Wrapper>
   )
 }

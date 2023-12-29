@@ -8,10 +8,17 @@ const Nav = () => {
   const [menuIcon, setMenuIcon] = useState();
 
   const Nav = styled.nav`
-    .navbar-lists {
-      display: flex;
-      gap: 4.8rem;
-      align-items: center;
+  
+
+  .navbar-lists {
+    
+    gap: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1rem 3rem;
+    position: relative;
 
       .navbar-link {
         &:link,

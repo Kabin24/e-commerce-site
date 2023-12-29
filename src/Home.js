@@ -4,7 +4,7 @@ import HeroSection from "./components/HeroSection";
 import Service from "./components/Service";
 import Trusted from "./components/Trusted";
 import FeatureProduct from "./components/FeatureProduct";
-
+import homeimg from "./images/hero1.jpg"
 const Home = () => {
 
   const data={
@@ -13,7 +13,7 @@ const Home = () => {
   }
   return (
   <> 
-  <HeroSection myData ={data}/>
+  <HeroSection myData={{ ...data, imageSrc: homeimg  }}/>
   <FeatureProduct/>
   <Service/>
   <Trusted/>

@@ -3,18 +3,23 @@ import styled from "styled-components";
 import { Button } from "../styles/Button";
 
 const HeroSection = ({ myData }) => {
- const {name} = myData;
+ const {name,imageSrc,additionalText} = myData;
 
   return (
     <Wrapper>
       <div className="container">
         <div className="grid grid-two-column">
           <div className="hero-section-data">
-            <p className="intro-data">Welcome to </p>
-            <h1> {name} </h1>
-            <p>
+            <h1 className="intro-data">WELCOME TO</h1>
+            <h2> {name} </h2>
+            <p >
             Your one-stop destination for affordable and quality online shopping! At Sasto Bazar, we believe in making e-commerce accessible to everyone by offering a diverse range of products at unbeatable prices.
             </p>
+            {additionalText && (
+              <p>
+                {additionalText}
+              </p>
+            )}
             <NavLink>
             <Button>shop now</Button>
             </NavLink>
@@ -23,7 +28,7 @@ const HeroSection = ({ myData }) => {
           <div className="hero-section-image">
             <figure>
             <img
-                   src="images/hero1.jpg"
+                   src={imageSrc || "images/hero1.jpg"}
                   alt=" Hero Section Image"
                   className="img-style"
                 />
@@ -53,6 +58,10 @@ const Wrapper = styled.section`
     h1 {
       text-transform: capitalize;
       font-weight: bold;
+      font-size:4.5rem
+    }
+    h2{
+      font-size: 3rem; // Adjust the font size as needed
     }
 
     .intro-data {
