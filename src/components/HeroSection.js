@@ -20,8 +20,8 @@ const HeroSection = ({ myData }) => {
                 {additionalText}
               </p>
             )}
-            <NavLink>
-            <Button>shop now</Button>
+           <NavLink to="/products">
+              <Button>Shop Now</Button>
             </NavLink>
           </div>
         

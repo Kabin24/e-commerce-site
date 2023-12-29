@@ -11,7 +11,6 @@ const Nav = () => {
   
 
   .navbar-lists {
-    
     gap: 3rem;
     display: flex;
     justify-content: space-between;
