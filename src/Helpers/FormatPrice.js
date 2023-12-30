@@ -5,7 +5,7 @@ const FormatPrice =({price})=>{
         style:"currency",
         currency:"NPR",
         maximumFractionDigits:2,
-    }).format(price/100);
+    }).format(price/50);
 
 }
 

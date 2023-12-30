@@ -1,17 +1,13 @@
+import React, { useState } from "react";
+import styled from "styled-components";
 
-import styled from 'styled-components';
-import React, { useState } from 'react';
-
-const MyImage = ({ imgs=[{url:""}]}) => {
+const MyImage = ({ imgs = [{ url: "" }] }) => {
   const [mainImage, setMainImage] = useState(imgs[0]);
-  
-  
-  
-return (
-<Wrapper>
-   
-   <div className='grid grid-four-column'>
-    {imgs.map((curElm, index) => {
+
+  return (
+    <Wrapper>
+      <div className="grid grid-four-column">
+        {imgs.map((curElm, index) => {
           return (
             <figure>
               <img
@@ -25,12 +21,13 @@ return (
           );
         })}
       </div>
+      {/* 2nd column  */}
 
-     <div className="main-screen">
+      <div className="main-screen">
         <img src={mainImage.url} alt={mainImage.filename} />
       </div>
-     </Wrapper>
- ) ;
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.section`
