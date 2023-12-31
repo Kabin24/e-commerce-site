@@ -18,14 +18,14 @@ const App = () => {
 
    
       colors: {
-        heading: "rgb(24 24 29)",
+        heading: "#FF4500",
         text: "rgba(29 ,29, 29, .8)",
         white: "#fff",
         black: " #212529",
         helper: "#8490ff",
   
         
-        bg: "#E0FFFF",
+        bg: "#E1EBEE",
         footer_bg: "#002244",
           btn: "rgb(98 84 243)",
           border: "rgba(98, 84, 243, 0.5)",
