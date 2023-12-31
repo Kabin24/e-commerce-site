@@ -15,9 +15,9 @@ const getLocalCartData = ()  => {
 const initialState ={
    // cart:[],
     cart:getLocalCartData(),
-    total_item:"",
-    total_amount:"",
-    shipping_fee:5000,
+    total_item:0,
+    total_price:0,
+    shipping_fee:5500,
 }
 
 const CartProvider = ({children}) => {
@@ -48,7 +48,10 @@ const addToCart =(id,color,amount,product) => {
 
 
     useEffect  (() => {
-        dispatch({ type:"CART_TOTAL_ITEMS"})
+        // dispatch({ type:"CART_TOTAL_ITEMS"})
+        // dispatch({ type:"CART_TOTAL_PRICE"})
+        dispatch({type:"CART_ITEM_PRICE_TOTAL"});
+
       localStorage.setItem("sthaCart" , JSON.stringify(state.cart))
     },[state.cart])
 
