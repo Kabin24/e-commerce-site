@@ -23,9 +23,10 @@ const Header = () => {
     align-items: center;
     position: relative;
  
- .logo{
-        height: 3rem;
-}
+    img {
+      height: 8rem; // Adjust this value to decrease the size of the logo
+  }
+
   `;
 
 

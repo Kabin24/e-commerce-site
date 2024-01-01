@@ -1,7 +1,7 @@
 
 import HeroSection from './components/HeroSection'
 import { useProductContext } from "./context/productcontext";
-import aboutimg from "./images/hero2.jpg"
+import aboutimg from "./images/about1.png"
 
 const About = () => {
   const { myName } = useProductContext()
